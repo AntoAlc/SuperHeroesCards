@@ -70,8 +70,9 @@ h1 {
   }
 
 .scroll{
-  width: 800px;
   overflow-x: scroll;
+  display: inline-flex;
+  gap: 25px;
 }
 
   .card {
@@ -80,11 +81,12 @@ h1 {
     /*position : relative;*/
     /* left    : 40%;*/
     display    : inline-block;
-    margin-left: 5%;
+  
+    min-width: 300px;
   }
 
   .card:hover {
-    transform : scale(1.15);
+    transform : scale(1.05);
     transition: 0.3s;
   }
 

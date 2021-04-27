@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/stylesFormulario.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Karla:wght@300;400&family=Roboto&display=swap');
     </style>
+
+    <link rel="stylesheet" href="css/stylesFormulario.css">
 
 
     <title>Formulario</title>
@@ -44,80 +45,84 @@
 
         <div class="form-container">
             <h2>Añadí tu super!</h2>
+
             <p class="AgregarP">Agregá tu personaje favorito completando las opciones.</p>
+
             <form action="#" method="POST" class="form">
 
 
                 <div class="form-izq">
-                    <label class="items" for="name">
-                        *Nombre
-                        <input type="text" id="name" name="name">
-                    </label>
+                    <label class="items" for="name" required> Nombre </label>
+                    <input class="box" type="text" id="name" name="name">
 
-                    <label class="items" for="date">
-                        *Fecha
-                        <input type="date" id="date" name="date" placeholder="dd/mm/aaaa">
-                    </label>
 
-                    <textarea name="description" id="description" cols="30" rows="10"
+                    <label class="items" for="date"> Fecha </label>
+                    <input class="box" type="date" id="date" name="date" placeholder="dd/mm/aaaa">
+
+                    <textarea class="textBox" name="description" id="description" cols="30" rows="10"
                         placeholder="Descripcion"></textarea>
+
                 </div>
+
                 <div class="form-der">
-                    <label class="items" for="especie">
-                        *Especie
-                        <select name="especie" id="especie">
-                            <option value="Indefinido" selected>Indefinido</option>
-                            <option value="Aliens">Aliens</option>
-                            <option value="Saiayin">Saiayin</option>
-                            <option value="Criptoniano">Criptoniano</option>
-                        </select>
-                    </label>
+                    <label class="items" for="especie" required> Especie </label>
+                    <select class="box" name="especie" id="especie">
+                        <option value="Indefinido" selected>Indefinido</option>
+                        <option value="Aliens">Aliens</option>
+                        <option value="Saiayin">Saiayin</option>
+                        <option value="Criptoniano">Criptoniano</option>
+                    </select>
 
-                    <label class="items" for="foto">
-                        Agregar Foto
-                        <input class="foto" type="file" name="img" id="foto" accept=".jpg, .png, .jpeg"
-                            placeholder="Seleccionar archivo">
-                       
-                    </label>
 
-                    <h3 class="items">Poderes</h3>
-                    <div class="opciones">
-                        <label for="volar">
-                            <input type="checkbox" name="volar">
-                            Volar
-                        </label>
+                    <label class="items" for="foto"> Agregar Foto </label>
+                    <input class="foto" type="file" name="img" id="foto" accept=".jpg, .png, .jpeg">
 
-                        <label for="superinteligencia"> </label>
-                        <input type="checkbox" name="superinteligencia">
-                        Superinteligencia
+                    <div class="contPoderes">
+                        <h2 class="items">Poderes</h2>
+                        <div class="opciones">
+                            <label class="checks" for="volar">
+                                <input class="checks" type="checkbox" name="volar">
+                                Volar
+                            </label>
 
-                        <label for="VistaRayoLaser">
-                            <input type="checkbox" name="VistaRayoLaser">
-                            Vista de rayo láser
-                        </label>
+                            <label class="checks" for="superinteligencia">
+                                <input type="checkbox" name="superinteligencia">
+                                Superinteligencia
+                            </label>
 
-                        <label for="BilleteraGorda">
-                            <input type="checkbox" name="BilleteraGorda">
-                            Billetera gorda
-                        </label>
+                            <label class="checks" for="VistaRayoLaser">
+                                <input type="checkbox" name="VistaRayoLaser">
+                                Vista de rayo láser
+                            </label>
+
+                            <label class="checks" for="BilleteraGorda">
+                                <input type="checkbox" name="BilleteraGorda">
+                                Billetera gorda
+                            </label>
+                        </div>
                     </div>
+
                     <hr>
 
-                    <h3 class="items">Tipo de personaje</h3>
-                    <label class="opciones" for="heroe">
-                        <input type="radio" name="heroe" id="heroe">
-                        Héroe/Heroína
-                    </label>
-                    <label class="opciones" for="villano">
-                        <input type="radio" name="villano" id="villano">
-                        Villano/Villana
-                    </label>
+                    <div class="contTipoPJ">
+                        <h2 class="items">Tipo de personaje</h2>
+                        <label class="opciones" for="heroe">
+                            <input type="radio" name="tipoPersonaje" id="heroe" value="heroe">
+                            Héroe/Heroína
+                        </label>
+
+                        <label class="opciones" for="villano">
+                            <input type="radio" name="tipoPersonaje" id="villano" value="villano">
+                            Villano/Villana
+                        </label>
+                    </div>
+
                 </div>
 
 
             </form>
 
-            <input class="button-añadir" type="submit" value="Añadir">
+            <input class="button-añadir" type="submit" value="Añadir" id="Añadir">
 
         </div>
     </main>

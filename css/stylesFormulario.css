@@ -98,7 +98,9 @@ h2 {
   line-height: 72px;
   text-align : center;
   color      : #FBFFFD;
+  margin-top : 2%;
 }
+
 
 .AgregarP {
   position   : relative;
@@ -135,27 +137,65 @@ form {
   color      : #FFFFFF;
 }
 
+
+
 .form-izq {
-  display: inline-block;
-  width  : 45%;
+  display : inline-block;
+  width   : 45%;
+  position: relative;
 
 }
 
 .form-der {
-  display: inline-block;
-  width  : 45%;
+  display : inline-block;
+  width   : 45%;
+  position: relative;
 }
 
-label{
-  
-  display: block;
+label {
+  display    : block;
+  font-family: Inter;
+  font-style : normal;
+  font-weight: 300;
+  line-height: 24px;
+  color      : #FFFFFF;
+
 }
 
-option{
-  
- 
-  display: inline-block;
+.box {
 
+  width        : 80%;
+  background   : #FFFFFF;
+  border       : 1.53407px solid rgba(0, 0, 0, 0.1);
+  box-sizing   : border-box;
+  border-radius: 15.3407px;
+  margin-bottom: 15px;
+
+  padding: 2%;
+
+}
+
+#name:focus {
+  border    : 1.53407px solid #DDDDDD;
+  background: #AFF9FE;
+}
+
+
+
+
+.textBox {
+
+  width        : 80%;
+  display      : block;
+  border       : 1.53407px solid rgba(0, 0, 0, 0.1);
+  box-sizing   : border-box;
+  border-radius: 15.3407px;
+  padding      : 3%;
+
+}
+
+option {
+  display: inline-block;
 }
 
 
@@ -173,6 +213,7 @@ input {
   font-size  : 16px;
   line-height: 19px;
   color      : #FFFFFF;
+
 }
 
 
@@ -182,6 +223,52 @@ input {
   border-radius: 5px;
 }
 
+.contPoderes {
+  margin: 6% 0;
+}
+
+.opciones label input {
+  width         : 24px;
+  height        : 20px;
+  vertical-align: middle;
+  margin-bottom : 2%;
+  margin-right  : 3%;
+}
+
+
+.contPoderes div label {
+  font-family: Karla;
+  font-style : normal;
+  font-weight: lighter;
+  font-size  : 16px;
+  line-height: 19px;
+
+}
+
+hr {
+
+  border: 1px solid #CCCCCC;
+}
+
+.contTipoPJ {
+  margin: 3% 0;
+}
+
+.contTipoPJ .opciones {
+  margin-bottom: 2%;
+
+}
+
+.contTipoPJ .opciones input {
+  font-family: Karla;
+  font-style : normal;
+  font-weight: normal;
+  font-size  : 20px;
+  line-height: 25px;
+  color      : #FFFFFF;
+  margin     : 2% 0;
+
+}
 
 .button-añadir {
   width        : 40%;
@@ -195,14 +282,28 @@ input {
   font-style : normal;
   font-weight: bold;
   font-size  : 20px;
-
-  text-align: center;
-
-  color: #000000;
+  text-align : center;
+  color      : #000000;
 
   border: none;
-
+  cursor: pointer;
 }
+
+.button-añadir:hover {
+
+  background: #001D2D;
+  transition: 0.5s;
+  color     : #FFFFFF;
+}
+
+input:required:invalid {
+  border          : 1.53407px solid #FF0000;
+  background-color: #FF0000;
+}
+
+/*#name:required:valid {
+  border: 1.53407px solid #71FF40;
+}*/
 
 
 
