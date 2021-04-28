@@ -221,7 +221,7 @@ input {
 .foto {
   margin-top   : 5px;
   background   : none;
-  border-radius: 5px;
+  
   border       : none;
 
   font-family: Inter;
@@ -282,6 +282,38 @@ hr {
 }
 
 .button-añadir {
+  
+  /*width        : 40%;*/
+  height       : 40px;
+  background   : #1CD1B0;
+  border-radius: 23.011px;
+  margin-top   : 30px;
+  margin-bottom: 20px;
+
+  font-family: Inter;
+  font-style : normal;
+  font-weight: bold;
+  font-size  : 20px;
+  text-align : center;
+  color      : #000000;
+
+  border: none;
+  cursor: pointer;
+
+  display: block;
+}
+
+.button-añadir:hover {
+
+  background: #001D2D;
+  transition: 0.5s;
+  color     : #FFFFFF;
+}
+
+
+/*
+
+.button-añadir {
   width        : 40%;
   height       : 40px;
   background   : #1CD1B0;
@@ -300,13 +332,8 @@ hr {
   cursor: pointer;
 }
 
-.button-añadir:hover {
 
-  background: #001D2D;
-  transition: 0.5s;
-  color     : #FFFFFF;
-}
-
+*/
 input:required:invalid {
   border          : 1.53407px solid #FF0000;
   background-color: #FF0000;
